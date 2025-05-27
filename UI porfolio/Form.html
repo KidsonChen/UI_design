@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>myForm - 分享心水景點/美食</title>
+<link rel="stylesheet" href="Form.css">
+</head>
+<body>
+
+  <!-- 側邊選單 -->
+  <nav class="sidebar">
+    <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="hongkong_island.html">港島</a></li>
+        <li><a href="kowloon.html">九龍</a></li>
+        <li><a href="newterritorieswest.html">新界西</a></li>
+        <li><a href="taipo.html">大埔</a></li>
+        <li><a href="Form.html">分享心水景點/美食</a></li>
+    </ul>
+</nav>
+<h1>分享心水景點/美食</h1>
+<form method="post" enctype="multipart/form-data" name="myform" target="_blank" id="myform" accept-charset="UTF-8">
+  <fieldset>
+    <legend>個人資料</legend>
+    <p>
+      <label for="txtName">姓名:</label>
+      <input name="txtName" type="text" id="txtName" placeholder="請輸入您的姓名" size="50" maxlength="50">
+    </p>
+    <p>
+      <label for="email">Email:</label>
+      <input name="email" type="email" id="email" placeholder="請輸入您的電郵地址" size="50" maxlength="50">
+    </p>
+    <p>
+      <label for="select">地區:</label>
+      <select name="select" id="select">
+        <option value="HK">港島</option>
+        <option value="KLN">九龍</option>
+        <option value="NT">新界</option>
+        <option value="ISLAND">離島</option>
+      </select>
+    </p>
+    <p>
+      <label for="textarea">內容:</label>
+      <textarea name="textarea" cols="50" rows="5" id="textarea"></textarea>
+    </p>
+
+    <button class="button-container" type="submit">送出</button>
+    <button class="button-container" type="reset">取消</button>
+  </fieldset>
+</form>
+</body>
+</html>

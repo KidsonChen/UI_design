@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>離島景點與美食</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="localstyle.css" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar animate__animated animate__fadeInLeft">
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="hongkong_island.html">港島</a></li>
+            <li><a href="kowloon.html">九龍</a></li>
+            <li><a href="newterritories.html">新界西</a></li>
+            <li><a href="taipo.html">大埔</a></li>
+            <li><a href="outlying_islands.html">離島</a></li>
+            <li><a href="#contact">分享心水景點/美食</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header class="animate__animated animate__fadeInDown">
+            <h1>離島</h1>
+            <p>探索離島的寧靜風光與特色美食</p>
+        </header>
+
+        <section class="hongkong-style">
+            <style scoped>
+                .hongkong-style::before { content: '離島概覽'; }
+            </style>
+            <h2>離島搭船去</h2>
+            <p>涵蓋香港多個風景優美且富有特色的離島，適合喜歡自然、文化和慢活生活的遊客。</p>
+        </section>
+
+        <!-- 景點 -->
+        <section class="hongkong-style" data-title="離島景點遊">
+            <h2 class="animate__animated animate__fadeIn">景點推介</h2>
+            <div class="local-grid">
+                <div class="local-card animate__animated animate__bounceIn">
+                    <img src="https://www.discoverhongkong.com/tc/explore/great-outdoor/wellness/cheung-chau.thumb.800.480.png?ck=1658220118" alt="長洲">
+                    <h3>長洲</h3>
+                    <p>香港最受歡迎的離島之一，擁有東灣泳灘、北帝廟及特色街市，適合一日遊和海灘活動。</p>
+                </div>
+                <div class="local-card animate__animated animate__bounceIn">
+                    <img src="https://www.discoverhongkong.com/content/dam/dhk/gohk/images/routes/lamma-island/poi-images/lamma-island-family-trail/pak-kok-pier-960x720-c.jpg" alt="南丫島">
+                    <h3>南丫島</h3>
+                    <p>適合登山和海灘休閒，索罟灣和榕樹灣有本土風味小店和海鮮餐廳。</p>
+                </div>
+                <div class="local-card animate__animated animate__bounceIn">
+                    <img src="https://cdn.reubird.hk/large%2Fblogs%2F%2Fcover.jpg" alt="大澳">
+                    <h3>大澳</h3>
+                    <p>著名漁村，以棚屋和水上人家聞名，保留濃厚的漁鄉風情，是文化攝影熱點。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 美食 -->
+        <section class="hongkong-style" data-title="離島滋味尋">
+            <h2 class="animate__animated animate__fadeIn">精選美食推介</h2>
+            <div class="local-grid">
+                <div class="local-card animate__animated animate__bounceIn">
+                    <img src="https://static04.hket.com/res/v3/image/content/2490000/2492906/IMG_5090_1024.JPG" alt="長洲大魚蛋">
+                    <h3>長洲大魚蛋</h3>
+                    <p>香港長洲島的著名特色小吃，以其體積較大、口感彈牙鮮美而聞名。這種大魚蛋選用新鮮深海魚肉製作，經過剁碎、調味和揉製成球狀，然後蒸煮或油炸，保留魚肉的鮮味和營養。與一般魚蛋不同，長洲大魚蛋每款口味均有獨立醬汁烹調，確保味道均勻而濃郁。</p>
+                </div>
+                <div class="local-card animate__animated animate__bounceIn">
+                    <img src="https://static6.orstatic.com/userphoto2/photo/21/1MDY/0BJ77934EE3C1BC1D7A9D7lx.jpg?og=1" alt="芒果糯米卷">
+                    <h3>天虹海鮮酒家</h3>
+                    <p>南丫島最著名的海鮮餐廳之一，已有40多年歷史，以新鮮海鮮和地道港式風味聞名。</p>
+                </div>
+                <div class="local-card animate__animated animate__bounceIn">
+                    <img src="https://had18.huluhk.org/uploadedFile/17976150301552644143.jpg" alt="大澳沙翁">
+                    <h3>大澳沙翁</h3>
+                    <p>人手製作沙翁（炸蛋球）非常出名，外層金黃酥脆，內裡鬆軟帶蛋香，炸好後撒上糖霜，甜而不膩，是大澳經典傳統小吃。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 聯繫 -->
+        <section class="contact-style" id="contact">
+            <h2 class="animate__animated animate__fadeIn">香港旅遊推薦</h2>
+            <p>想了解更多香港美食資訊？或分享各自心水的景點和美食，可跟我們說！</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Kidson. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.sidebar a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (this.getAttribute('href') !== '#contact') {
+                    window.location.href = this.getAttribute('href');
+                } else {
+                    document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

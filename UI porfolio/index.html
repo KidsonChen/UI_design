@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香港美食之旅</title>
+    <link rel="stylesheet" href="style_main.css">
+    <link rel="stylesheet" href="animate.css">
+</head>
+<body>
+    <div id="minimizedBar" onclick="restorePopup()">git</div>
+
+    <!-- 遮罩和彈窗 -->
+    <div id="overlay">
+    <div id="popup">
+        <button id="skipBtn" onclick="skipAndMinimize()">Skip</button>
+        <img src="img/香港.gif" alt="動畫" style="width:100%; height:auto;"/>
+    </div>
+    </div>
+
+    <!-- 固定 Logo -->
+    <a href="#home" class="fixed-logo">
+        <img src="hong-kong.png" alt="網站Logo">
+    </a>
+    <!-- 側邊選單 -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#home">首頁</a></li>
+            <li><a href="hongkong_island.html">港島</a></li>
+            <li><a href="kowloon.html">九龍</a></li>
+            <li><a href="newterritorieswest.html">新界西</a></li>
+            <li><a href="taipo.html">大埔</a></li>
+            <li><a href="outlying_islands.html">離島</a></li>
+            <li><a href="Form.html">分享心水景點/美食</a></li>
+        </ul>
+    </nav>
+
+    <!-- 主內容 -->
+    <div class="main-content">
+        <header id="home">
+            <h1>香港美食之旅</h1>
+            <p>探索香港不同地區的美食文化，感受城市獨特的味道！</p>
+        </header>
+
+        <!-- 輪播圖容器 -->
+        <div class="carousel-container">
+            <button class="carousel-arrow prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel-slides">
+                <!-- 港島 -->
+                <div class="carousel-slide">
+                    <section id="hongkongisland" class="hongkong-style">
+                        <a href="hongkong_island.html">
+                            <div class="local-grid">
+                                <div class="local-card">
+                                    <img src="https://images.pexels.com/photos/2498551/pexels-photo-2498551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="港島">
+                                    <h3>港島</h3>
+                                    <p>
+                                        <li>面積約78.65平方公里，為香港三大地域之一，最高峰為海拔552米的太平山。</li>
+                                        <li>是香港最早開發的地區，歷史上曾是英國殖民地的行政中心，特別是南區赤柱曾為早期行政重鎮。</li>
+                                        <li>北部人口密集，劃為維多利亞城，與九龍半島隔維多利亞港相望。</li>
+                                        <li>該島屬萬山群島的一部分，海岸線曾是貿易船隻停泊的繁忙港口。</li>
+                                        <li>現今香港島包括中西區、灣仔區、東區及南區，是香港的金融、商業及文化中心。</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+
+                <!-- 九龍 -->
+                <div class="carousel-slide">
+                    <section id="kowloon" class="hongkong-style">
+                        <a href="kowloon.html">
+                            <div class="local-grid">
+                                <div class="local-card">
+                                    <img src="https://images.pexels.com/photos/946630/pexels-photo-946630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="九龍">
+                                    <h3>九龍</h3>
+                                    <p>
+                                        <li>九龍位於香港地理中心，面積約47平方公里，最高點為飛鵝山（603米）。</li>
+                                        <li>九龍由深水埗、油尖旺、九龍城、黃大仙及觀塘五區組成，人口超過200萬，約佔全港人口30%。</li>
+                                        <li>九龍原本只指界限街以南地區，1937年擴展至新九龍地區。</li>
+                                        <li>九龍是香港重要的市區，經歷多次填海工程，面積不斷擴大。</li>
+                                        <li>九龍以其密集的住宅區和商業區聞名，彌敦道是該區最繁忙的街道之一。</li>
+                                        <li>歷史上，九龍曾是漁民、農民及打石工人的聚居地，現為香港重要的經濟及文化區。</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+
+                <!-- 新界西 -->
+                <div class="carousel-slide">
+                    <section id="newterritorieswest" class="hongkong-style">
+                        <a href="new_territorieswest.html">
+                            <div class="local-grid">
+                                <div class="local-card">
+                                    <img src="https://today-obs.line-scdn.net/0h8SKxvWKXZ3x2AXfBs04YK05Xaw1FZ311VDJ9GVtTO04LLSQvHWE0HwcDblALYyZ4VjB8SgNUPk0MZCEpSg/w1200" alt="新界西">
+                                    <h3>新界西</h3>
+                                    <p>
+                                        <li>新界西包括元朗、屯門、荃灣、葵青及離島區，面積約480平方公里，是香港面積最大、人口最多的選區，人口約200萬。</li>
+                                        <li>新界西地理範圍廣闊，涵蓋多個新市鎮及鄉村，交通便利，青山公路貫穿區內各地。</li>
+                                        <li>該區早期以農業和漁業為主，現已發展成為多元化的住宅和工業區。</li>
+                                        <li>新界西的發展較新界東及市區更為廣泛，居民生活和工作往來頻繁，是香港重要的生活及經濟區域之一</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+
+                <!-- 大埔 -->
+                <div class="carousel-slide">
+                    <section id="taipo" class="hongkong-style">
+                        <a href="taipo.html">
+                            <div class="local-grid">
+                                <div class="local-card">
+                                    <img src="https://www.discoverhongkong.com/content/dam/dhk/intl/explore/neighbourhoods/tai-po/intro/tai_po_16_9_3.jpg" alt="大埔">
+                                    <h3>大埔</h3>
+                                    <p>
+                                        <li>大埔位於新界東北部，面積較新界西小，為大埔區的主要部分，毗鄰吐露港。</li>
+                                        <li>歷史悠久，早在新石器時代已有先民活動，宋代時期採珠業興盛，曾是重要的陶瓷工業中心。</li>
+                                        <li>清朝初期開始大規模發展，成為新界東的行政中心。</li>
+                                        <li>大埔新市鎮是區內重要的住宅區，交通便利，距離沙田約11公里。</li>
+                                        <li>曾是水上交通樞紐，與潮州、汕頭等地有客船來往。</li>
+                                        <li>現今大埔兼具歷史文化和現代化發展，是新界東重要的社區</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+
+                <!-- 離島 -->
+                <div class="carousel-slide">
+                    <section id="taipo" class="hongkong-style">
+                        <a href="outlying_islands.html">
+                            <div class="local-grid">
+                                <div class="local-card">
+                                    <img src="https://media.timeout.com/images/105620313/750/562/image.jpg" alt="離島">
+                                    <h3>離島</h3>
+                                    <p>
+                                        <li>香港的離島擁有獨特的自然景觀與文化風情，是遠離都市繁囂的理想去處。</li>
+                                        <li>長洲：以太平清醮節慶聞名，每年舉行搶包山比賽。島上有美麗的沙灘、張保仔洞，以及各式地道美食，如大魚蛋和芒果糯米糍。</li>
+                                        <li>南丫島：擁有悠閒的漁村氛圍，適合徒步探索。榕樹灣和索罟灣之間的步道可欣賞海景，並有多間海鮮餐廳。</li>
+                                        <li>大澳：香港最具漁村風情的地方，以棚屋建築和水上活動聞名。可品嚐蝦醬炒飯、鹹魚雞粒炒飯等地道美食。</li>
+                                        <li>坪洲：小巧寧靜的島嶼，擁有歷史悠久的福源牛皮廠，並有藝術工作坊和文青咖啡店。</li>
+                                        <li>蒲台島：香港最南端的小島，以奇石景觀著稱，適合遠足與欣賞海岸風光。</li>
+                                        <li>塔門：擁有廣闊草原與壯麗海景，是露營、放風箏和觀星的好地方。</li>
+                                        <li>東平洲：聯合國世界地質公園的一部分，以奇特的沉積岩地貌聞名，適合浮潛與探索海洋生態。</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+            </div>
+            <button class="carousel-arrow next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <!-- 聯繫部分 -->
+        <section id="contact" class="contact-style">
+            <h2>港專初級網頁設計第三組</h2>
+            <p>想了解更多香港美食資訊？或分享各自心水的景點和美食，可跟我們說</p>
+        </section>
+    </div>
+
+    <!-- JavaScript 輪播邏輯 -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            if (index >= totalSlides) currentSlide = 0;
+            else if (index < 0) currentSlide = totalSlides - 1;
+            else currentSlide = index;
+
+            const offset = -currentSlide * 100;
+            document.querySelector('.carousel-slides').style.transform = `translateX(${offset}%)`;
+        }
+
+        function moveSlide(direction) {
+            showSlide(currentSlide + direction);
+        }
+
+        // 初始化顯示第一頁
+        showSlide(currentSlide);
+
+        const overlay = document.getElementById('overlay');
+        const minimizedBar = document.getElementById('minimizedBar');
+        const popup = document.getElementById('popup');
+
+        // 按下 Skip 按鈕，關閉彈窗並顯示縮小條
+        function skipAndMinimize() {
+            overlay.style.display = 'none'; // 隱藏彈窗和遮罩
+            minimizedBar.style.display = 'block'; // 顯示縮小條
+        }
+
+        // 點擊縮小條，還原彈窗
+        function restorePopup() {
+            overlay.style.display = 'flex';
+            minimizedBar.style.display = 'none';
+        }
+
+        // 頁面載入時自動顯示彈窗
+        window.onload = function() {
+            overlay.style.display = 'flex';
+            minimizedBar.style.display = 'none';
+        };
+    </script>
+</body>
+</html>

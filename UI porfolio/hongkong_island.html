@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香港島景點與美食</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="localstyle.css" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar animate__animated animate__fadeInLeft">
+        <ul>
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="hongkong_island.html">港島</a></li>
+            <li><a href="kowloon.html">九龍</a></li>
+            <li><a href="newterritories.html">新界西</a></li>
+            <li><a href="taipo.html">大埔</a></li>
+            <li><a href="outlying_islands.html">離島</a></li>
+            <li><a href="#contact">分享心水景點/美食</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>香港島</h1>
+            <p></p>
+        </header>
+
+        <section class="hongkong-style">
+            <style scoped>
+                .hongkong-style::before { content: '港島概覽'; }
+            </style>
+            <h2>香港島繁花</h2>
+            <p>這裡是香港的核心商業區，包括繁華的中環和蘭桂坊。太平山頂提供壯麗的維港景色，而赤柱則有悠閒的海濱風光和市集。</p>
+        </section>
+
+        <!-- 景點 -->
+        <section class="hongkong-style" data-title="香港島景點遊">
+            <h2 class="animate__animated animate__fadeIn">景點推介</h2>
+            <div class="local-grid">
+                <div class="local-card animate__animated animate__bounceIn">
+                    <img src="https://images.pexels.com/photos/3031754/pexels-photo-3031754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="維多利亞港">
+                    <h3>維多利亞港</h3>
+                    <p>香港最具代表性的地標，夜景璀璨，適合搭乘天星小輪欣賞。</p>
+                </div>
+                <div class="local-card animate__animated animate__bounceIn">
+                    <img src="https://images.pexels.com/photos/26970226/pexels-photo-26970226.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="太平山頂">
+                    <h3>太平山頂</h3>
+                    <p>俯瞰香港全景的最佳地點，可搭乘山頂纜車抵達。</p>
+                </div>
+                <div class="local-card animate__animated animate__bounceIn">
+                    <img src="https://luxecityguides.com/wp-content/uploads/2021/03/MOVE_Feb_Hong_Kong_Stanley_cc_iStock-paulwongkw.original-1920x1278.jpg" alt="赤柱">
+                    <h3>赤柱</h3>
+                    <p>位於香港島南部，是一個充滿異國風情的海濱小鎮，擁有多個值得探索的景點</p>
+                </div>
+        </div>
+        </section>
+
+        <!-- 美食 -->
+        <section class="hongkong-style" data-title="香港島滋味尋">
+            <h2 class="animate__animated animate__fadeIn">精選美食推介</h2>
+            <div class="local-grid">
+                <div class="local-card animate__animated animate__bounceIn">
+                    <img src="https://www.hongkongd.com/wp-content/uploads/2020/07/Sai-Ying-Pun_Eat_Kwun-Kee_1.jpg" alt="坤記煲仔小菜">
+                    <h3>坤記煲仔小菜</h3>
+                    <p>以米芝蓮推介聞名，招牌煲仔飯用瓷煲和火山石烹調，飯粒香口且有金黃飯焦，味道濃郁，是煲仔飯愛好者必試。</p>
+                </div>
+                <div class="local-card animate__animated animate__bounceIn">
+                    <img src="https://www.discoverhongkong.com/content/dam/dhk/data/poi/media/s/sing-heung-yuen/sing-heung-yuen-01.jpg" alt="勝香園">
+                    <h3>勝香園</h3>
+                    <p>必試蕃茄蛋通粉和檸蜜脆脆，後者口感酥脆帶清新檸檬味，極具特色，深受本地人喜愛。</p>
+                </div>
+                <div class="local-card animate__animated animate__bounceIn">
+                    <img src="https://static8.orstatic.com/userphoto/doorphoto/2/21W/00ELKB5A1E7AC5693A555Alx.jpg?og=1" alt="橋底辣蟹">
+                    <h3>橋底辣蟹</h3>
+                    <p>招牌辣蟹肉質肥厚鮮甜，配上微辣蒜酥，口感層次豐富，是不少饕客一試難忘的招牌菜，尖峰時段需訂位。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 聯繫 -->
+        <section class="contact-style" id="contact">
+            <h2 class="animate__animated animate__fadeIn">香港旅遊推薦</h2>
+            <p>想了解更多香港美食資訊？或分享各自心水的景點和美食，可跟我們說！</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Kidson. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.sidebar a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (this.getAttribute('href') !== '#contact') {
+                    window.location.href = this.getAttribute('href');
+                } else {
+                    document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', 'Noto Sans HK', sans-serif;
+}
+
+body {
+    background-color: #e2610a;
+    color: #333;
+    padding-left: 50px; /* 為側邊欄收合時的圖示預留空間 */
+}
+
+/* 側邊選單 */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #c8102e;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    opacity: 0.8; /* 設定透明度為 80% */
+}
+
+.sidebar:hover {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+.sidebar ul li a:hover {
+    background: #ffd700;
+    color: #c8102e;
+}
+
+/* 選單標誌 */
+.sidebar::before {
+    content: '☰';
+    position: absolute;
+    top: 20px;
+    right: -40px;
+    font-size: 30px;
+    color: #c8102e;
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 主內容 */
+.main-content {
+    /* margin-left: 50px; */ /* 被 body padding-left 和 margin: 0 auto; 處理 */
+    padding: 20px;
+    max-width: 1200px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto 50px; /* 在 body 的 content box 內水平置中 */
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    background: no-repeat center/cover; /* 可以為不同頁面設定不同 header 背景 */
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-bottom: 20px; /* 增加 header 和下方內容的間距 */
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+/* 美食卡片 */
+.local-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.local-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    opacity: 0.9; /* 輕微透明，可選 */
+}
+
+.local-card:hover {
+    transform: translateY(-10px);
+    opacity: 1; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.local-card img {
+    width: 100%;
+    height: 250px; /* 調整卡片圖片高度 */
+    object-fit: cover;
+}
+
+.local-card h3 {
+    padding: 15px;
+    font-size: 24px;
+    color: #c8102e;
+}
+
+.local-card p {
+    padding: 0 15px 15px;
+    font-size: 16px;
+    color: #555;
+    min-height: 100px; /* 給描述一個最小高度，讓卡片看起來更整齊 */
+}
+
+/* 香港風格元素 */
+.hongkong-style {
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    background: #fff5e6;
+    padding: 20px;
+    margin: 20px 0 60px;
+    text-align: center;
+    position: relative;
+    opacity: 0.9; /* 輕微透明，可選 */
+    transition: opacity 0.3s;
+}
+
+.hongkong-style:hover {
+    opacity: 1;
+}
+.hongkong-style h2 {
+    font-size: 28px;
+    color: #c8102e;
+    margin-bottom: 20px;
+}
+.hongkong-style p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6; /* 增加段落行高 */
+}
+
+.hongkong-style::before {
+    content: '心水景點/美食'; /* 可以根據 section 主題修改 */
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    background: #c8102e;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.contact-style {
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    background: #fff5e6;
+    padding: 20px;
+    margin: 20px 0 60px;
+    text-align: center;
+    position: relative;
+    opacity: 0.9; /* 輕微透明，可選 */
+    transition: opacity 0.3s;
+}
+
+.contact-style:hover {
+    opacity: 1;
+}
+.contact-style h2 {
+    font-size: 28px;
+    color: #c8102e;
+    margin-bottom: 20px;
+}
+.contact-style p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6; /* 增加段落行高 */
+}
+
+.contact-style::before {
+    content: '聯繫我們'; /* 可以根據 section 主題修改 */
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    background: #c8102e;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    body {
+        padding-left: 0; /* 小螢幕取消 body 的 padding-left */
+    }
+    .main-content {
+        margin-left: 20px; 
+        margin-right: 20px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+    .local-card img {
+        height: 200px; /* 小螢幕卡片圖片高度 */
+    }
+    .local-card p {
+        min-height: auto; /* 小螢幕取消最小高度 */
+    }
+}
